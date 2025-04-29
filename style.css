@@ -8,65 +8,64 @@ body {
 }
 
 .main-box {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 100vh; /*Il frame contenente gli input e l'immagine occupa tutto lo spazio verticale del viewport*/
+    display: flex; /*'display: flex' serve per sistemare flessibilmente gli elementi dentro un contenitore, mettendoli di base in riga*/
+    align-items: center; /*Sposta gli elementi del flex al centro dell'asse y del flex (In questo caso sono al centro della pagina perché l'altezza del box è 100vh)*/
+    justify-content: space-evenly; /*In quanto ".main-box" è un div, quindi occupa tutto lo spazio orizzontale, questa dichiarazione muove tutti gli elementi del flex in maniera equidistante l'uno dall'altro*/
 }
 
 .contacts-box {
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 2rem;
+    font-size: 2rem; /*Il font-size è di 32 pixel*/
+    display: flex; /*Il frame contenente gli input e il tag <h2> è inserito in un flex*/
+    flex-direction: column; /*Il contenuto del flex è disposto verticalmente (di default è orizzontale)*/
+    align-items: start; /*Questa dichiarazione serve a dare a tutti gli elementi di 'contact-box' la loro height e width di default*/
+    gap: 2rem; /*Gli elementi del flex hanno un gap di 32 pixel*/
 }
 
 .title h2 {
-    font-size: 3rem;
-    font-family: Tahoma;
+    font-size: 3rem; /*Imposta il font size del titolo a 48 pixel*/
+    font-family: Tahoma; /*Il font-family imposta il tipo di font*/
     color:rgb(32, 124, 228);
-    margin-bottom: 5px;
+    margin-bottom: 5px; /*Mette un margine con la <hr> di 5 pixel*/
 }
 
 .title hr {
-    border: none;
+    border: none; /*Rimuove il bordo di default alla linea orizzontale*/
     width: 150px;
     height: 5px;
     background-color: #606ceb;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+    border-radius: 1rem; /*Arrotonda la linea orizzontale di 16 pixel*/
+    margin-bottom: 2rem; /*Aggiunge un margine di 32 pixel in basso, dove ci sono gli input*/
 }
 
 .contact-input {
     width: 25rem;
     height: 3rem;
-    border: none;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 2rem;
+    border: none; /*Rimuove il bordo di default*/
+    padding-left: 2em; /*Aggiunge un padding a sinistra di 64 pixel (poiché il font-size del nodo genitore è di 32 pixel)*/
+    padding-right: 2em; /*Stesso discorso del padding a sinistra, ma questa volta a destra*/
+    border-radius: 2rem; /*Arrotonda i bordi di 32 pixel*/
 }
 
 #text-area {
     height: 15em;
-    padding-top: 1rem;
-    border-radius: 1rem;
+    padding-top: 1rem; /*Aggiunge un padding verticale nella text-area di 16 pixel*/
+    border-radius: 1rem; /*Arrotonda i bordi di 16 pixel*/
 }
 
-.contact-input:focus {
-    border: solid 2px #5c74f8;
-    outline: none
+.contact-input:focus { /*Questo pseudo-selettore fa sì che quando si ha premuto su uno degli input si generi un outline (simile ad un border) che rimane fin quando non si preme altrove*/
+    border: solid 2px #5c74f8; /*Aggiunge un bordo di 2 pixel ogni volta che il focus su un'input è attivo*/
+    outline: none /*Rimuove l'outline di default*/
 }  
 
 button {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-    color:white;
-    border: solid 3px;
-    border-color: rgb(61, 61, 160);
-    border-radius: 20px; 
-    background: linear-gradient(#071982, #3245b8);
-    cursor: pointer;  
+    padding: 1rem; /*Aggiunge uno spazio di 16 pixel fra il testo "SUBMIT" e i bordi del bottone*/
+    font-size: 1.5rem; /*Modifica il font-size di 24 pixel*/
+    color:white;  /*Modifica il colore del testo*/
+    border: solid 3px; /*Aggiunge un bordo di 3 pixel*/
+    border-color: rgb(61, 61, 160); /*Modifica  il colore del bordo*/
+    border-radius: 20px; /*Arrotonda i bordi di 20 pixel*/
+    background: linear-gradient(#071982, #3245b8); /*Aggiunge un gradiente di background al bottone*/
+    cursor: pointer; /*Fa sì che il cursore diventi "pointer" quando si hoveri sopra il bottone*/
 }
+
