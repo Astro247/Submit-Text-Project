@@ -18,7 +18,7 @@ body {
     font-size: 2rem; /*Il font-size è di 32 pixel*/
     display: flex; /*Il frame contenente gli input e il tag <h2> è inserito in un flex*/
     flex-direction: column; /*Il contenuto del flex è disposto verticalmente (di default è orizzontale)*/
-    align-items: start; /*Questa dichiarazione serve a dare a tutti gli elementi di 'contact-box' la loro height e width di default*/
+    align-items: start; /*Questa dichiarazione serve a dare a tutti gli elementi di 'contact-box' la loro height e width di default. In questo caso con "start", tutti gli elementi partono da sinistra verso destra del box.*/
     gap: 2rem; /*Gli elementi del flex hanno un gap di 32 pixel*/
 }
 
